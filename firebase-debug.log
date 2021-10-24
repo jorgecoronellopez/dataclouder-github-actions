@@ -1,0 +1,162 @@
+[debug] [2021-10-24T06:08:58.614Z] ----------------------------------------------------------------------
+[debug] [2021-10-24T06:08:58.622Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-24T06:08:58.624Z] CLI Version:   9.21.0
+[debug] [2021-10-24T06:08:58.625Z] Platform:      win32
+[debug] [2021-10-24T06:08:58.625Z] Node Version:  v17.0.1
+[debug] [2021-10-24T06:08:58.944Z] Time:          Sun Oct 24 2021 01:08:58 GMT-0500 (hora de verano central)
+[debug] [2021-10-24T06:08:58.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-24T06:08:59.098Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-24T06:08:59.100Z] > authorizing via signed-in user (jorgecoronellopez1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jorge\Desktop\integracion
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-10-24T06:10:35.960Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-24T06:10:35.961Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T06:10:38.394Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 24 Oct 2021 06:10:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:10:39.457Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"dataclouder-demo-git-actions","name":"dataclouder-demo-git-actions"}
+[debug] [2021-10-24T06:10:41.685Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sun, 24 Oct 2021 06:10:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=255","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:10:41.686Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-10-24T06:10:42.122Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at Request.<anonymous> (C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at IncomingMessage.<anonymous> (C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:509:28)
+    at IncomingMessage.emit (node:events:402:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1340:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID dataclouder-demo-git-actions. Please try again with a unique project ID.
+[debug] [2021-10-24T06:11:40.999Z] ----------------------------------------------------------------------
+[debug] [2021-10-24T06:11:41.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-24T06:11:41.006Z] CLI Version:   9.21.0
+[debug] [2021-10-24T06:11:41.006Z] Platform:      win32
+[debug] [2021-10-24T06:11:41.006Z] Node Version:  v17.0.1
+[debug] [2021-10-24T06:11:41.008Z] Time:          Sun Oct 24 2021 01:11:41 GMT-0500 (hora de verano central)
+[debug] [2021-10-24T06:11:41.009Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-24T06:11:41.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-24T06:11:41.028Z] > authorizing via signed-in user (jorgecoronellopez1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jorge\Desktop\integracion
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-10-24T06:12:55.622Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"dataclouder-actions12376","name":"dataclouder-actions12376"}
+[debug] [2021-10-24T06:12:56.926Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 24 Oct 2021 06:12:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=339","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:12:56.936Z] > refreshing access token with scopes: []
+[debug] [2021-10-24T06:12:56.936Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T06:12:57.704Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 24 Oct 2021 06:12:58 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:12:58.970Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6252838622373996499 [none]
+[debug] [2021-10-24T06:13:01.053Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6252838622373996499 200
+[debug] [2021-10-24T06:13:01.054Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6252838622373996499 {"name":"operations/cp.6252838622373996499","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"205847282268","projectId":"dataclouder-actions12376","lifecycleState":"ACTIVE","name":"dataclouder-actions12376","createTime":"2021-10-24T06:12:58.074Z"}}
+[debug] [2021-10-24T06:13:01.059Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-24T06:13:01.060Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T06:13:02.499Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 24 Oct 2021 06:13:03 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:13:03.294Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/dataclouder-actions12376:addFirebase  
+ 
+[debug] [2021-10-24T06:13:05.558Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 24 Oct 2021 06:13:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:13:05.560Z] > refreshing access token with scopes: []
+[debug] [2021-10-24T06:13:05.560Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T06:13:06.311Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 24 Oct 2021 06:13:07 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T06:13:07.246Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 [none]
+[debug] [2021-10-24T06:13:08.485Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 200
+[debug] [2021-10-24T06:13:08.486Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 {"name":"operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1"}
+[debug] [2021-10-24T06:13:08.990Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-10-24T06:13:09.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 [none]
+[debug] [2021-10-24T06:13:10.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 200
+[debug] [2021-10-24T06:13:10.450Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 {"name":"operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1"}
+[debug] [2021-10-24T06:13:11.455Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-10-24T06:13:11.455Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 [none]
+[debug] [2021-10-24T06:13:12.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 200
+[debug] [2021-10-24T06:13:12.421Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 {"name":"operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1"}
+[debug] [2021-10-24T06:13:14.421Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-10-24T06:13:14.422Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 [none]
+[debug] [2021-10-24T06:13:14.988Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 200
+[debug] [2021-10-24T06:13:14.988Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 {"name":"operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1"}
+[debug] [2021-10-24T06:13:18.992Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-10-24T06:13:18.992Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 [none]
+[debug] [2021-10-24T06:13:19.885Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 200
+[debug] [2021-10-24T06:13:19.885Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1 {"name":"operations/workflows/ZDRlNTQ1NDQtYmZkYS00YjI2LWIwYmMtOGU3ZWZiYTMyZjM1","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"dataclouder-actions12376","projectNumber":"205847282268","displayName":"dataclouder-actions12376","name":"projects/dataclouder-actions12376","resources":{"hostingSite":"dataclouder-actions12376"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: dataclouder-actions12376
+[info]    - Project Name: dataclouder-actions12376
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/dataclouder-actions12376/overview
+[info] i  Using project dataclouder-actions12376 (dataclouder-actions12376) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2021-10-24T06:14:03.506Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-10-24T06:14:04.191Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-10-24T06:14:04.191Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.1.3","browserURL":"https://www.gstatic.com/firebasejs/9.1.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.1.3/firebase.tgz"},"live":{"version":"9.1","browserURL":"https://www.gstatic.com/firebasejs/live/9.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.1.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.1.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.1.3/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.1.3/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.1.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.1.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.1.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.1.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.1.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.1.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Jorge 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=769352264&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-10-24T06:14:24.292Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"721bca56f8d083773805","redirect_uri":"http://localhost:9005","state":"769352264"}
+[debug] [2021-10-24T06:14:25.352Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 24 Oct 2021 06:14:26 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"8b1a66b13576a6e8a1ffae43b6d10dad\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"C69C:696C:AB172B:1371122:6174F9C2"}
+[debug] [2021-10-24T06:14:25.624Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-10-24T06:14:26.486Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-10-24T06:14:26.487Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jorgecoronellopez","id":89707160,"node_id":"MDQ6VXNlcjg5NzA3MTYw","avatar_url":"https://avatars.githubusercontent.com/u/89707160?v=4","gravatar_id":"","url":"https://api.github.com/users/jorgecoronellopez","html_url":"https://github.com/jorgecoronellopez","followers_url":"https://api.github.com/users/jorgecoronellopez/followers","following_url":"https://api.github.com/users/jorgecoronellopez/following{/other_user}","gists_url":"https://api.github.com/users/jorgecoronellopez/gists{/gist_id}","starred_url":"https://api.github.com/users/jorgecoronellopez/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jorgecoronellopez/subscriptions","organizations_url":"https://api.github.com/users/jorgecoronellopez/orgs","repos_url":"https://api.github.com/users/jorgecoronellopez/repos","events_url":"https://api.github.com/users/jorgecoronellopez/events{/privacy}","received_events_url":"https://api.github.com/users/jorgecoronellopez/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2021-08-28T19:34:33Z","updated_at":"2021-10-24T05:18:14Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":11,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as jorgecoronellopez 
+[info] 
